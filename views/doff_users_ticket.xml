@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<odoo>
+		<data>
+			<record model="ir.ui.view" id="doff_users_tickets_view">
+				<field name="name">doff.users.tickets</field>
+				<field name="model">res.users</field>
+				<field name="inherit_id" ref="base.view_users_form"/>
+				<field name="arch" type="xml">
+					<notebook position="inside">
+						<page string="Responsables Soportes Tickets">				
+							<group colspan="4">
+								<group cols="2">
+									<field name="responsable_ticketict" />
+									<field name="reponsable_ticketmant" />
+								</group>
+							</group>
+						</page>
+					</notebook>
+				</field>
+			</record>	
+		</data>
+</odoo>
+
+		
